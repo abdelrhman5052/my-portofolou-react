@@ -1,0 +1,120 @@
+section.contact-us .icon-envelope {
+  color: var(--subtitle);
+  margin-right: 1rem;
+  font-size: 1.8rem;
+
+}
+
+
+section.contact-us .title {
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+  color: var(--title);
+}
+
+section.contact-us .sub-title {
+  color: var(--subtitle);
+  margin-bottom: 2rem;
+  line-height: 1.65rem;
+}
+
+section.contact-us label {
+  color: var(--subtitle);
+}
+
+
+section.contact-us #email, section.contact-us #textarea {
+all: unset;
+background-color: rgba(63, 63, 70, 0.15);
+border: 1px solid rgb(63, 63, 70);
+padding: 0.5rem 1rem;
+margin-left: 1rem;
+border-radius: 5px;
+transition: 0.3s ease;
+font-size: 1.1rem;
+}
+
+section.contact-us #email:focus, section.contact-us #textarea:focus {
+  border: 1px solid rgb(45, 212, 191);
+}
+
+section.contact-us #email:hover, section.contact-us #textarea:hover {
+  border: 1px solid rgb(45, 212, 191);
+}
+
+section.contact-us #textarea {
+  min-height: 9rem;
+  resize: vertical;
+}
+
+section.contact-us .btn {
+  background-color: rgba(36, 37, 46, 1);
+  padding: 0.75rem 1.9rem ;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-top: 1.8rem;
+  border: 1px solid rgb(63, 63, 70);
+}
+
+section.contact-us .btn:hover  {
+  transform: scale(0.90);
+}
+
+@media (max-width: 600px) {
+  section.contact-us form {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    /* margin: auto; */
+  }
+
+  section.contact-us form div.flex {
+  flex-direction: column;
+  align-items: start;
+
+  }
+
+  section.contact-us .animation {
+    display: none;
+  }
+
+  section.contact-us #email, section.contact-us #textarea  {
+    width: 100%;
+    margin-left: 0;
+    padding: 0.7rem 0;
+    margin-top: 1rem;
+  }
+
+  section.contact-us .btn {
+    width: 30%;
+    align-self: center;
+  }
+}
+
+
+@media(max-width: 1100px) {
+  section.contact-us .contact-animation {
+    display: none;
+  }
+}
+
+
+.light .contact-us #email, .light section.contact-us #textarea {
+  background-color: rgba(255, 255, 255, 0.162);
+  border: 1px solid rgba(128, 128, 128, 0.451);
+  box-shadow: 1px 1px 1px rgba(73, 73, 75, 0.105);
+  color: #232324;
+}
+
+.light section.contact-us #email:hover,
+.light section.contact-us #textarea:hover , 
+.light section.contact-us #email:focus, 
+.light section.contact-us #textarea:focus {
+border: 1px solid rgb(78, 80, 80);
+}
+
+.light .loo {
+  color: var(--subtitle);
+}
